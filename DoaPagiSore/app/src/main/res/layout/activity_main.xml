@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Hadist Dzikir Pagi dan Sore"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textStyle="italic"
+                android:text="Hai orang-orang yang beriman, berdzikirlah (dengan menyebut nama) Allah dengan dzikir sebanyak-banyaknya.\nDan bertasbihlah kepada-Nya di waktu pagi dan petang.\n(Al-Ahzab : 41-42)" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pagi_activity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/holo_blue_light"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dzikir Pagi"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sore_activity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/pagi_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/holo_orange_dark"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dzikir Sore"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
